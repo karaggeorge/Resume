@@ -20,14 +20,20 @@
   background-color: $white;
   width: 70%;
   margin: -18rem auto 0 auto;
-  height: 25rem;
+  height: 28rem;
 
 
   &-info {
-    flex: 3;
+    flex: 7;
     flex-direction: column;
   }
+
+  &__photo {
+    flex: 3;
+    background: url('/img/me.jpg') center top / cover no-repeat;
+  }
 }
+
 
 .resume {
   position: absolute;
@@ -101,9 +107,4 @@
       color: $color-four;
     }
   }
-}
-
-.profile-card__photo {
-  flex: 2;
-  background: url('/img/me.jpg') center top / cover no-repeat;
 }

@@ -45,12 +45,15 @@ a {
   background-color: #ffffff;
   width: 70%;
   margin: -18rem auto 0 auto;
-  height: 25rem; }
+  height: 28rem; }
   .profile-card:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .profile-card-info {
-    flex: 3;
+    flex: 7;
     flex-direction: column; }
+  .profile-card__photo {
+    flex: 3;
+    background: url("/img/me.jpg") center top/cover no-repeat; }
 
 .resume {
   position: absolute;
@@ -105,7 +108,3 @@ a {
       margin: auto; }
     .profile-card-info__social a:hover {
       color: #F19F4D; }
-
-.profile-card__photo {
-  flex: 2;
-  background: url("/img/me.jpg") center top/cover no-repeat; }

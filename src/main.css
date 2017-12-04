@@ -1,0 +1,96 @@
+.app {
+  flex: 1;
+  background-color: #f0f8ff;
+  flex-direction: column; }
+
+div {
+  display: flex; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  background-color: #ffffff; }
+
+.heading {
+  height: 20rem;
+  padding: 5rem;
+  background-color: #4484CE; }
+
+.profile-card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: .3s ease;
+  border: 2px red;
+  background-color: #ffffff;
+  width: 70%;
+  margin: -18rem auto 0 auto;
+  height: 25rem; }
+  .profile-card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .profile-card-info {
+    flex: 3;
+    flex-direction: column; }
+
+.resume {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: #4484CE;
+  border-radius: 4px;
+  color: #ffffff; }
+  .resume a {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: .3s ease;
+    padding: .75rem; }
+    .resume a:hover {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .resume-download {
+    border-left: 1px solid #ffffff; }
+
+.profile-card-info__demographic {
+  position: relative;
+  flex-direction: column;
+  flex: 4;
+  padding: 2rem 2rem 0 2rem; }
+  .profile-card-info__demographic h1 {
+    font-family: 'Roboto', 'Sans Serif';
+    color: #4484CE;
+    font-weight: 500; }
+  .profile-card-info__demographic h4 {
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 1rem;
+    padding: .25rem 0 .5rem .5rem;
+    font-weight: 300; }
+  .profile-card-info__demographic div.demographic {
+    width: 100%; }
+    .profile-card-info__demographic div.demographic + div {
+      padding-top: 1rem; }
+  .profile-card-info__demographic .title {
+    width: 15%;
+    text-align: right;
+    padding-right: 2rem;
+    font-weight: bold; }
+
+.profile-card-info__social {
+  flex: 1;
+  background-color: #4484CE; }
+  .profile-card-info__social a {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    text-decoration: none; }
+    .profile-card-info__social a i {
+      margin: auto; }
+    .profile-card-info__social a:hover {
+      color: #F19F4D; }
+
+.profile-card__photo {
+  flex: 2;
+  background: url("/img/me.jpg") center top/cover no-repeat; }

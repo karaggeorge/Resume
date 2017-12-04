@@ -1,0 +1,13 @@
+$color-one: #4484CE;
+$color-two: #D9D9D9;
+$color-three: #F9CF00;
+$color-four: #F19F4D;
+$white: #ffffff;
+$black: #000000;
+$off-white: #f0f8ff;
+
+.app {
+  flex: 1;
+  background-color: $off-white;
+  flex-direction: column;
+}

@@ -11,3 +11,23 @@ $off-white: #f0f8ff;
   background-color: $off-white;
   flex-direction: column;
 }
+
+section:not(.profile) {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-title {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: $color-one;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    width: 70%;
+  }
+}

@@ -27,16 +27,16 @@ class Profile extends Component {
           <div className='profile-card-info'>
             <div className='profile-card-info__demographic'>
               <div className='resume'>
-                <a className='resume-view' href='GeorgeKaragkiaouris_Resume.pdf' target='_blank'> Resume </a>
-                <a className='resume-download' href='GeorgeKaragkiaouris_Resume.pdf' download><Icon code='download' /></a>
+                <a className='resume-view' href='/files/GeorgeKaragkiaouris_Resume.pdf' target='_blank'> Resume </a>
+                <a className='resume-download' href='/files/GeorgeKaragkiaouris_Resume.pdf' download><Icon code='download' /></a>
               </div>
               <h1> George Karagkiaouris </h1>
               <h4> Software Engineer & Biologist </h4>
-              <div className='demographic'> <span className='title'> Age </span> {this.getAge()} </div>
-              <div className='demographic'> <span className='title'> Email </span> gkaragkiaouris2@gmail.com </div>
-              <div className='demographic'> <span className='title'> Phone </span> (203) 909-7497 </div>
-              <div className='demographic'> <span className='title'> Address </span> 275 Mt. Carmel Ave, Hamden, CT </div>
-              <div className='demographic'> <span className='title'> Nationality </span> Greek </div>
+              <div className='demographic'> <span className='title'> Age </span>{this.getAge()}</div>
+              <div className='demographic'> <span className='title'> Email </span><a href='mailto:gkaragkiaouris2@gmail.com'>gkaragkiaouris2@gmail.com</a></div>
+              <div className='demographic'> <span className='title'> Phone </span><a href='tel:+01-203-909-7497'>(203) 909-7497</a></div>
+              <div className='demographic'> <span className='title'> Address </span>275 Mt. Carmel Ave, Hamden, CT</div>
+              <div className='demographic'> <span className='title'> Nationality </span>Greek</div>
             </div>
             <div className='profile-card-info__social'>
               <SocialIcon target='https://www.linkedin.com/in/gkaragkiaouris/' code='linkedin' />

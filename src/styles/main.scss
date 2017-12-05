@@ -6,6 +6,7 @@ div {
 
 h1,h2,h3,h4,h5 {
   margin: 0;
+  clear: both;
 }
 
 a {
@@ -15,3 +16,6 @@ a {
 
 @import 'components/navbar.scss';
 @import 'components/profile.scss';
+@import 'components/education.scss';
+@import 'components/timeline.scss';
+@import 'components/experience.scss';

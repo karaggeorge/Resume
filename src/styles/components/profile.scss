@@ -1,5 +1,9 @@
 
 @mixin shadow {
+  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2), 0 5px 20px 0 rgba(0,0,0,0.19);
+}
+
+@mixin hover-shadow {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   transition: .3s ease;
 
@@ -20,16 +24,16 @@
   background-color: $white;
   width: 70%;
   margin: -18rem auto 0 auto;
-  height: 28rem;
+  height: 32rem;
 
 
   &-info {
-    flex: 7;
+    flex: 6;
     flex-direction: column;
   }
 
   &__photo {
-    flex: 3;
+    flex: 4;
     background: url('/img/me.jpg') center top / cover no-repeat;
   }
 }
@@ -44,7 +48,7 @@
   color: $white;
 
   a {
-    @include shadow;
+    @include hover-shadow;
     padding: .75rem;
   }
 
@@ -62,6 +66,7 @@
   h1 {
     font-family: 'Roboto', 'Sans Serif';
     color: $color-one;
+    font-size: 38px;
     font-weight: 500;
   }
 
@@ -70,18 +75,20 @@
     margin-bottom: 1rem;
     padding: .25rem 0 .5rem .5rem;
     font-weight: 300;
+    font-size: 25px;
   }
 
   div.demographic {
     width: 100%;
+    font-size: 20px;
 
     +div{
-      padding-top: 1rem;
+      padding-top: 1.5rem;
     }
   }
 
   .title {
-    width: 15%;
+    width: 20%;
     text-align: right;
     padding-right: 2rem;
     font-weight: bold;

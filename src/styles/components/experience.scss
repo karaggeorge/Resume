@@ -1,0 +1,43 @@
+.experience-card {
+
+  &__logo img {
+    width: auto;
+    height: 64px;
+  }
+
+  &__info {
+    margin-left: 1rem;
+    flex-direction: column;
+
+    h1 {
+      color: $color-one;
+    }
+
+    h3 {
+      font-weight: normal;
+    }
+  }
+}
+
+.experience-tags {
+  flex-wrap: wrap;
+  border-top: 1px solid $off-white;
+  padding-top: 1rem;
+  margin-bottom: -.5rem;
+
+  a {
+    background: $color-one;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    padding: .25rem 1rem;
+    border-radius: 16px;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

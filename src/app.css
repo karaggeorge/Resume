@@ -1,6 +1,6 @@
 .app {
   flex: 1;
-  background-color: #f0f8ff;
+  background-color: #e6e6e6;
   flex-direction: column; }
 
 section:not(.profile) {

@@ -1,0 +1,31 @@
+.card {
+  @include shadow;
+  background-color: $white;
+}
+
+.education-card {
+
+  &__logo img {
+    width: auto;
+    height: 64px;
+  }
+
+  &__info {
+    margin-left: 1rem;
+    flex-direction: column;
+
+    h1 {
+      color: $color-one;
+    }
+
+    h3 {
+      font-weight: normal;
+    }
+  }
+}
+
+.content {
+  width: 70%;
+  padding: 2rem;
+  box-sizing: border-box;
+}

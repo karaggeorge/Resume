@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Timeline, { TimelineCard, TimelineMarker } from './timeline';
+import Timeline, { TimelineCard } from './timeline';
 import Tag from './tag';
 import experiences from '../data/experiences.json';
 

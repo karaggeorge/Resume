@@ -1,5 +1,4 @@
 import React from 'react';
-import getTags from '../data/tags';
 
 const renderStringTag = (tag) => <a href={`#${tag}`}>{tag}</a>;
 

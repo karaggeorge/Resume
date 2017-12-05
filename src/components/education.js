@@ -6,7 +6,7 @@ const EducationCard = ({ title, subtitle, logo, date, description, inverted }) =
     <TimelineCard inverted={inverted}>
       <div className='education-card'>
         <div className='education-card__logo'>
-          <img src={logo} />
+          <img src={logo} alt=' ' />
         </div>
         <div className='education-card__info'>
           <h1>{title}</h1>

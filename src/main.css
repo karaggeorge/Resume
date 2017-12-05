@@ -14,7 +14,7 @@ section:not(.profile) {
     font-weight: 700;
     color: #4484CE;
     text-transform: uppercase;
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem; }
   section:not(.profile) .content {
     width: 70%; }
 
@@ -112,7 +112,10 @@ a {
 
 .card {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-direction: column; }
 
 .education-card__logo img {
   width: auto;
@@ -127,9 +130,7 @@ a {
     font-weight: normal; }
 
 .content {
-  width: 70%;
-  padding: 2rem;
-  box-sizing: border-box; }
+  width: 70%; }
 
 .timeline-container {
   position: relative;
@@ -280,9 +281,18 @@ a {
     text-align: center;
     vertical-align: middle;
     font-size: 15px;
-    padding: .25rem 1rem;
+    padding: 0.2rem 1rem;
     border-radius: 16px;
     margin-right: .5rem;
-    margin-bottom: .5rem; }
+    margin-bottom: .5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    .experience-tags a span {
+      border-left: 1px solid #ffffff;
+      padding-left: .5rem;
+      margin-left: .5rem;
+      font-size: 17px; }
     .experience-tags a:last-child {
       margin-right: 0; }
+
+.skill-category {
+  flex-direction: column; }

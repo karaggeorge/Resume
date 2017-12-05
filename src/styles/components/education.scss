@@ -1,6 +1,9 @@
 .card {
   @include shadow;
   background-color: $white;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-direction: column;
 }
 
 .education-card {
@@ -26,6 +29,4 @@
 
 .content {
   width: 70%;
-  padding: 2rem;
-  box-sizing: border-box;
 }

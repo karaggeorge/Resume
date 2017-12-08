@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-export const TimelineCard = ({ inverted, children }) => {
-  const className = inverted ? 'inverted' : undefined;
+export const TimelineCard = ({ inverted, children, inactive }) => {
+  const className = `${inverted ? 'inverted' : ''} ${inactive ? 'inactive' : ''}`;
+
 
   return (
     <li className={className}>

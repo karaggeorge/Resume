@@ -1,0 +1,32 @@
+section.projects .content {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project-card {
+  margin-bottom: 2rem;
+  @extend .card;
+  width: 48%;
+  flex-direction: column;
+
+  h1 {
+    color: $color-one;
+  }
+
+  a {
+    background: $color-one;
+    width: max-content;
+    color: $white;
+    padding: .75rem;
+    border-radius: 7px;
+    margin-top: 1rem;
+    align-self: flex-end;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: .5s;
+
+    &:hover {
+      @include shadow;
+    }
+  }
+}

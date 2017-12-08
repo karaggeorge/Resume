@@ -1,0 +1,23 @@
+[
+  {
+    "logo": "/img/qu.png",
+    "title": "Quinnipiac University",
+    "subtitle": "Software Engineering & Biology",
+    "date": "2013 - Present",
+    "description": "Current GPA: 3.9"
+  }, {
+    "logo": "/img/a100.png",
+    "title": "A100",
+    "subtitle": "Software Development",
+    "date": "Spring 2015",
+    "description": "Trained in Web Development and worked as part of a development team in a front- and back-end project for a partner company",
+    "tags": ["HTML/CSS/Javascript", "Meteor", "Requirement Elicitation", "Teamwork"],
+    "hiddenTags": ["Critical Thinking", "Problem Solving", "Leadership"]
+  }, {
+    "logo": "/img/hc.png",
+    "title": "Hellenic College of Thessaloniki",
+    "subtitle": "High School",
+    "date": "2010 - 2013",
+    "description": "Graduated with a GPA of 4.0"
+  }
+]

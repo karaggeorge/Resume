@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Strong",
+    "skills": [
+      "Java",
+      "HTML/CSS/Javascript",
+      "ReactJS",
+      "Advanced Algorithms",
+      "Data Structures",
+      "Object-Oriented Design",
+      "Test Driven Development"
+    ]
+  }, {
+    "title": "Knowledgeable",
+    "skills": [
+      "Requirement Elicitation",
+      "Design",
+      "MongoDB",
+      "C",
+      "Meteor",
+      "Ruby/Rails",
+      "SQL"
+    ]
+  }, {
+    "title": "General",
+    "skills": [
+      "Teamwork",
+      "Agile",
+      "Leadership",
+      "Creative Thinking",
+      "Problem Solving",
+      "Teaching"
+    ]
+  }
+]

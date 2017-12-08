@@ -1,3 +1,17 @@
+
+@mixin shadow {
+  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2), 0 5px 20px 0 rgba(0,0,0,0.19);
+}
+
+@mixin hover-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  transition: .3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}
+
 @import 'app.scss';
 
 div {
@@ -14,9 +28,46 @@ a {
   color: inherit;
 }
 
+.flip-container {
+  perspective: 1000px;
+
+  &.flipped .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .flipper {
+    transition: .6s;
+    transform-style: preserve-3d;
+    position: relative;
+    flex: 1;
+  }
+
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+
+  .back {
+    transform: rotateY(180deg);
+  }
+}
+
 @import 'components/navbar.scss';
 @import 'components/profile.scss';
 @import 'components/education.scss';
 @import 'components/timeline.scss';
 @import 'components/experience.scss';
 @import 'components/skills.scss';
+@import 'components/awards.scss';
+@import 'components/projects.scss';
+@import 'components/tag.scss';
+@import 'components/contact.scss';

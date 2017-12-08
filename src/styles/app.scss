@@ -1,4 +1,5 @@
-$color-one: #4484CE;
+// $color-one: #4484CE;
+$color-one: #1f5694;
 $color-two: #D9D9D9;
 $color-three: #F9CF00;
 $color-four: #F19F4D;
@@ -27,7 +28,96 @@ section:not(.profile) {
     margin-bottom: 4rem;
   }
 
-  .content {
-    width: 70%;
+  h4.filter {
+    position: relative;
+    top: -2.4rem;
+
+    .tag {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      cursor: default;
+      position: relative;
+      top: -.1rem;
+    }
+
+    .clear {
+      color: $color-one;
+      cursor: pointer;
+    }
   }
+
+  .content {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+footer {
+  height: 15rem;
+  background: $color-one;
+  margin-top: 5rem;
+  display: flex;
+  position: relative;
+
+  .info {
+    flex: 1;
+    flex-direction: column;
+    color: $white;
+    font-size: 1.25rem;
+    justify-content: center;
+    padding-left: 2rem;
+
+    li {
+      list-style-type: none;
+      margin-bottom: .5rem;
+
+      i {
+        width: 2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .copyright {
+    flex: 2;
+  }
+
+  .social {
+    flex: 1;
+    background-color: $color-one;
+    padding-right: 2rem;
+
+    a {
+      color: white;
+      height: 100%;
+      display: flex;
+      flex: 1;
+      text-decoration: none;
+
+      i {
+        margin: auto;
+      }
+
+      &:hover {
+        color: $color-four;
+      }
+    }
+  }
+}
+
+#back-to-top {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background: $color-one;
+  border-radius: 50%;
+  cursor: pointer;
+  @include hover-shadow;
+  top: -2rem;
+  left: calc(50% - 2rem);
+  text-align: center;
+  color: white;
+  padding: .75rem 1rem;
+  box-sizing: border-box;
+  border: 2px solid $off-white;
 }

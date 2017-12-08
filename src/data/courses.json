@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Networking and Distributed Processing",
+    "tags": ["Java"]
+  }, {
+    "title": "Software Engineering Design",
+    "tags": ["Design", "Java", "Object-Oriented Design"]
+  }, {
+    "title": "Algorithm Design and Analysis",
+    "tags": ["Java", "Advanced Algorithms"]
+  }, {
+    "title": "Software Quality Testing",
+    "tags": ["Java", "Test Driven Development"]
+  }, {
+    "title": "Software Project Management",
+    "tags": ["Leadership", "Teamwork", "Agile"]
+  }, {
+    "title": "Software Engineering in Healthcare",
+    "tags": ["Creative Thinking"]
+  }, {
+    "title": "Software Design and Architecture",
+    "tags": ["Design", "Java"]
+  }, {
+    "title": "Software Requirement Analysis",
+    "tags": ["Requirement Elicitation", "Agile"]
+  }, {
+    "title": "Data Structure and Abstraction",
+    "tags": ["Data Structures", "Leadership", "Teaching", "Object-Oriented Design"]
+  }, {
+    "title": "Discrete Mathematics",
+    "tags": ["Problem Solving"]
+  }, {
+    "title": "Applied Statistics",
+    "tags": ["Problem Solving"]
+  }, {
+    "title": "Linear Algebra",
+    "tags": ["Problem Solving"]
+  }
+]

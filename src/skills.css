@@ -1,2 +1,7 @@
+section.skills .content {
+  flex-direction: column; }
+
 .skill-category {
   flex-direction: column; }
+  .skill-category + .skill-category h2 {
+    margin-top: 2rem; }

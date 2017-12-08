@@ -1,0 +1,62 @@
+#contact .content {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-form {
+  flex: 1;
+  margin-right: 1rem;
+
+  a {
+    background: $color-one;
+    padding: .75rem;
+    border-radius: 6px;
+    color: $white;
+    width: max-content;
+    align-self: flex-end;
+    cursor: pointer;
+    @include hover-shadow;
+    margin-top: 1rem;
+  }
+
+  .front {
+    flex-direction: column;
+    padding: 2rem 3rem;
+  }
+
+  .back {
+    flex-direction: column;
+    color: $color-one;
+
+    i {
+      text-align: center;
+      font-size: 8rem;
+      margin-top: 4rem;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.contact-field {
+  width: 100% !important;
+
+  label {
+    color: $color-one !important;
+  }
+
+  hr + hr {
+    border-color: $color-one !important;
+  }
+}
+
+.contact-map {
+  @include shadow;
+  flex: 2;
+  margin-left: 1rem;
+  border-radius: 5px;
+}

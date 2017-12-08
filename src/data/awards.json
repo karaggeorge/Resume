@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Hackathon First Place",
+    "logo": "/img/cttc.png",
+    "subtitle": "CT Tech Council Hackathon",
+    "date": "2016",
+    "description": "Competed in a skills challenge across Connecticut schools. Then competed in a hackathon with the top 50 of those student coders and won first prize",
+    "tags": ["Teamwork", "Meteor", "Creative Thinking", "Problem Solving", "Design"]
+  }, {
+    "title": "Two Hackathon First Places",
+    "logo": "/img/qcc.png",
+    "subtitle": "QCC Hackathon",
+    "date": "Spring 2015, Fall 2015",
+    "description": "Won first prize in two hackathons organized by Quinnipiac's Computing Club competing with 30 other students",
+    "tags": ["C#/.Net", "Meteor", "Problem Solving", "Teamwork", "Design", "Creative Thinking"]
+  }, {
+    "title": "Three Hackathon Second Places",
+    "logo": "/img/qcc.png",
+    "subtitle": "QCC Hackathon",
+    "date": "Spring 2016, Fall 2016, Spring 2017",
+    "description": "Won first prize in three hackathons organized by Quinnipiac's Computing Club competing with 30 other students",
+    "tags": ["ReactJS", "Problem Solving", "HTML/CSS/Javascript", "Teamwork", "Design", "Creative Thinking"]
+  }, {
+    "title": "Quinnipiac Dean's List",
+    "logo": "/img/qu.png",
+    "subtitle": "Quinnipiac University",
+    "date": "2013, 2014, 2015, 2016",
+    "description": "“Students who excel in scholarship by earning a greade point average of at least 3.5 with no grade lower than C”",
+    "tags": []
+  }, {
+    "title": "Bronze Medal in Informatics",
+    "logo": "/img/jboi.png",
+    "subtitle": "Junior Balkan Olympiad in Informatics",
+    "date": "2010",
+    "description": "Earned a Bronze Medal competing against top students from each country in the Balkan region",
+    "tags": ["Problem Solving", "Creative Thinking", "C", "Advanced Algorithms", "Data Structures"]
+  }, {
+    "title": "Participation in Informatics Olympiad",
+    "logo": "/img/ioi.png",
+    "subtitle": "25th International Olympiad in Informatics",
+    "date": "2013",
+    "description": "Ranked 2nd among all high school students in Greece in Informatics and represented the country in the 25th IOI",
+    "tags": ["Problem Solving", "Creative Thinking", "C", "Advanced Algorithms", "Data Structures"]
+  }, {
+    "title": "Participation in Chemistry Olympiad",
+    "logo": "/img/icho.png",
+    "subtitle": "45th International Chemistry Olympiad",
+    "date": "2012, 2013, 2014",
+    "description": "Ranked 1st among all high school students in Greece in Chemistry and represented the country in the 45th IChO",
+    "tags": ["Problem Solving", "Creative Thinking"]
+  }
+]

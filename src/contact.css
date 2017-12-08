@@ -1,0 +1,9 @@
+#contact .content {
+  flex-direction: row; }
+
+.contact-form {
+  flex-direction: column;
+  flex: 1; }
+
+.contact-map {
+  flex: 2; }

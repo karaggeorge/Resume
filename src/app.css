@@ -12,8 +12,39 @@ section:not(.profile) {
     font-size: 45px;
     letter-spacing: 1px;
     font-weight: 700;
-    color: #4484CE;
+    color: #1f5694;
     text-transform: uppercase;
     margin-bottom: 4rem; }
   section:not(.profile) .content {
-    width: 70%; }
+    width: 80%;
+    flex-direction: column; }
+
+footer {
+  height: 20rem;
+  background: #1f5694;
+  margin-top: 5rem;
+  display: flex;
+  position: relative; }
+  footer .info {
+    flex: 1;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center; }
+    footer .info li {
+      list-style-type: none; }
+      footer .info li i {
+        width: 2rem;
+        text-align: center; }
+  footer .copyright {
+    flex: 1; }
+  footer .social {
+    flex: 1; }
+
+#back-to-top {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background: #F19F4D;
+  border-radius: 50%; }

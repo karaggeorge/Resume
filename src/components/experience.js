@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Timeline, { TimelineCard } from './timeline';
-import Tag from './tag';
+import Tag, { TagArea } from './tag';
 import experiences from '../data/experiences.json';
+import { isInactive, getName } from '../data/tags';
 
-const ExperienceCard = ({ title, subtitle, logo, date, description, inverted, tags }) => {
+const ExperienceCard = ({ title, subtitle, logo, date, description, inverted, tags, inactive }) => {
   return (
-    <TimelineCard inverted={inverted}>
+    <TimelineCard inverted={inverted} inactive={inactive}>
       <div className='experience-card'>
         <div className='experience-card__logo'>
           <img src={logo} alt=' ' />
@@ -17,25 +18,24 @@ const ExperienceCard = ({ title, subtitle, logo, date, description, inverted, ta
           <p>{description}</p>
         </div>
       </div>
-      {
-        tags && (
-          <div className='experience-tags'>
-            { tags.map((tag, i) => <Tag value={tag} key={`tag-${i}`} />) }
-          </div>
-        )
-      }
+      <TagArea tags={tags} />
     </TimelineCard>
   );
 }
 
 class Experience extends Component {
+
   render() {
+    const { filterTag, clear } = this.props;
+    const className = filterTag ? 'experience filtered' : 'experience';
+
     return (
-      <section className="education">
+      <section className={className} id='experience'>
         <h1 className='section-title'>Experience</h1>
+        { filterTag && <h4 className='filter'>Currently showing:<Tag value={getName(filterTag)} /><a className='clear' onClick={clear}>Clear</a></h4> }
         <div className='content'>
           <Timeline>
-            { experiences.map((experience, i) => <ExperienceCard key={i} {...experience} />) }
+            { experiences.map((experience, i) => <ExperienceCard inactive={isInactive(experience, filterTag)} key={i} {...experience} />) }
           </Timeline>
         </div>
       </section>
@@ -44,39 +44,3 @@ class Experience extends Component {
 }
 
 export default Experience;
-
-// <ExperienceCard
-//   logo='/img/pw.jpg'
-//   title='PatientWisdom'
-//   subtitle='Software Engineer / Web Developer'
-//   date='June 2017 - December 2017'
-//   description='Worked with a team of Software Engineers doing front-end work using ReactJS, Javascript, HTML and CSS along with back-end work in Ruby on Rails and Postgress. Practiced Test Driven Development using Enzyme/Chai/Sinon, RSpec and Cucumber for Acceptance Testing'
-//   tags={['ReactJS', 'HTML/CSS/Javascript', 'Ruby/Rails', 'Postgress', 'TDD']} />
-// <ExperienceCard
-//   logo='/img/pw.jpg'
-//   title='PatientWisdom'
-//   subtitle='Software Engineer / Web Developer'
-//   date='June 2016 - August 2016'
-//   description='Worked with a team of Software Engineers as a Web Developer using Meteor, MongoDB, Javascript, HTML and CSS do to both front-end and back-end work while following an Agile project cycle. Learned a lot about working in an Engineering Team and the value of Pair Programming'
-//   tags={['Meteor', 'MongoDB', 'HTML/CSS/Javascript', 'Agile']} />
-// <ExperienceCard
-//   logo='/img/esg.jpg'
-//   title='ESG Compass'
-//   subtitle='Software Developer'
-//   date='June 2015 - December 2015'
-//   description='Worked with a project manager to create a website and a web application from scratch using Meteor and MongoDB. Practiced Requirement Elicitation and Analysis and also UI Design'
-//   tags={['Meteor', 'MongoDB', 'Design', 'Requirement Elicitation']} />
-// <ExperienceCard
-//   logo='/img/qu.png'
-//   title='Quinnipiac University Learning Commons'
-//   subtitle='Peer Tutor'
-//   date='Fall 2015 - Spring 2017'
-//   description='Tutored students in Computer Science, Engineering, Chemistry, Biology, Physics and Math courses. Went through levels of tutoring training learning various teaching methods and strategies'
-//   tags={['Teaching']} />
-// <ExperienceCard
-//   logo='/img/qu.png'
-//   title='Quinnipiac University Residential Life'
-//   subtitle='Resident Assistant'
-//   date='Fall 2017 - Present'
-//   description='Campus Leadership position in which I worked with a team to create a positive living environemnt and comunity designed to promote education, healthy living and responsible citizenship. Assisted in the selection, evaluation and training of incoming RAs. Enforced all University Housing policies'
-//   tags={['Leadership', 'Teaching', 'Training']} />

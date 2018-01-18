@@ -27,7 +27,8 @@ class Awards extends Component {
     const className = filterTag ? 'awards filtered' : 'awards';
 
     return (
-      <section className={className} id='awards'>
+      <section className={className}>
+        <div className='anchor' id='awards' />
         <h1 className='section-title'>Awards</h1>
         { filterTag && <h4 className='filter'>Currently showing:<Tag value={getName(filterTag)} /><a className='clear' onClick={clear}>Clear</a></h4> }
         <div className='content'>

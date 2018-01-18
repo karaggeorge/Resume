@@ -26,6 +26,7 @@ section:not(.profile) {
     color: $color-one;
     text-transform: uppercase;
     margin-bottom: 4rem;
+    text-align: center;
   }
 
   h4.filter {
@@ -49,6 +50,10 @@ section:not(.profile) {
   .content {
     width: 80%;
     flex-direction: column;
+
+    @include media-query(less-than-xl-screen) {
+      width: 90%;
+    }
   }
 }
 
@@ -59,6 +64,15 @@ footer {
   display: flex;
   position: relative;
 
+  @include media-query(less-than-medium-screen) {
+    flex-direction: column;
+    height: 20rem;
+
+    .info {
+      margin-top: 5rem;
+    }
+  }
+
   .info {
     flex: 1;
     flex-direction: column;
@@ -67,6 +81,10 @@ footer {
     justify-content: center;
     padding-left: 2rem;
 
+    ul {
+      padding: 0;
+    }
+
     li {
       list-style-type: none;
       margin-bottom: .5rem;
@@ -74,12 +92,17 @@ footer {
       i {
         width: 2rem;
         text-align: center;
+        padding-right: .5rem;
       }
     }
   }
 
   .copyright {
     flex: 2;
+
+    @include media-query(less-than-large-screen) {
+      flex: 0;
+    }
   }
 
   .social {

@@ -1,21 +1,16 @@
-
-@mixin shadow {
-  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2), 0 5px 20px 0 rgba(0,0,0,0.19);
-}
-
-@mixin hover-shadow {
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-  transition: .3s ease;
-
-  &:hover {
-    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-}
-
+@import 'mixins.scss';
 @import 'app.scss';
 
 div {
   display: flex;
+}
+
+.anchor {
+  position: relative;
+  top: -8rem;
+  @include media-query(less-than-large-screen) {
+    top: -6.5rem;
+  }
 }
 
 h1,h2,h3,h4,h5 {
@@ -30,6 +25,10 @@ a {
 
 .flip-container {
   perspective: 1000px;
+  width: 100%;
+  @include media-query(less-than-large-screen) {
+    height: 30rem;
+  }
 
   &.flipped .flipper {
     transform: rotateY(180deg);

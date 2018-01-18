@@ -19,7 +19,6 @@ const EducationCard = ({ title, subtitle, logo, date, description, inverted, tag
           <p>{description}</p>
         </div>
       </div>
-      <TagArea tags={tags} />
     </TimelineCard>
   );
 };
@@ -39,7 +38,8 @@ class Education extends Component {
 
 
     return (
-      <section className={className} id='education'>
+      <section className={className}>
+        <div className='anchor' id='education' />
         <h1 className='section-title'>Education</h1>
         { filterTag && <h4 className='filter'>Currently showing:<Tag value={getName(filterTag)} /><a className='clear' onClick={clear}>Clear</a></h4> }
         <div className='content'>

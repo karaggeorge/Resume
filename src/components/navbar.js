@@ -6,7 +6,7 @@ const scrollTo = (name) => (e) => {
   const target = $(`#${name}`);
 
   $('html, body').animate({
-    scrollTop: target.offset().top-50
+    scrollTop: target.offset().top
   }, 1000, function() {
     $(target).focus();
   });
@@ -31,11 +31,11 @@ class Navbar extends Component {
 
     $(window).on('scroll', function() {
       const currentPosition = $(this).scrollTop() + .25*$(this).outerHeight();
-      const sections = $('section');
+      const sections = $('.anchor');
 
       sections.each(function() {
-        const top = $(this).offset().top;
-        const bottom = top + $(this).outerHeight();
+        const top = $(this).parent().offset().top;
+        const bottom = top + $(this).parent().outerHeight();
 
         if (currentPosition > top && currentPosition <= bottom) {
           if (activeSection !== this.id) setActive(this.id);
@@ -50,13 +50,15 @@ class Navbar extends Component {
     return (
       <div className="navbar">
         <img src='/img/logo.png' alt=' ' />
-        <NavbarItem name='profile' active={active} />
-        <NavbarItem name='experience' active={active} />
-        <NavbarItem name='projects' active={active} />
-        <NavbarItem name='awards' active={active} />
-        <NavbarItem name='skills' active={active} />
-        <NavbarItem name='education' active={active} />
-        <NavbarItem name='contact' active={active} />
+        <div className='navbar-items'>
+          <NavbarItem name='profile' active={active} />
+          <NavbarItem name='experience' active={active} />
+          <NavbarItem name='projects' active={active} />
+          <NavbarItem name='awards' active={active} />
+          <NavbarItem name='skills' active={active} />
+          <NavbarItem name='education' active={active} />
+          <NavbarItem name='contact' active={active} />
+        </div>
       </div>
     );
   }

@@ -1,0 +1,94 @@
+@mixin shadow {
+  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2), 0 5px 20px 0 rgba(0,0,0,0.19);
+}
+
+@mixin hover-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  transition: .3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}
+
+// Screen width defintions
+$tiny-screen: 390px;
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 1024px;
+$xl-screen: 1900px;
+$hd-screen: 2300px;
+$uhd-screen: 3800px;
+
+@mixin media-query($point) {
+  @if $point == less-than-tiny-screen {
+    @media screen and (max-width: $tiny-screen) { @content; }
+  }
+  @if $point == greater-than-tiny-screen {
+    @media screen and (min-width: $tiny-screen) { @content; }
+  }
+  @if $point == less-than-small-screen {
+    @media screen and (max-width: $small-screen) { @content; }
+  }
+  @if $point == small-screen {
+    @media screen and (min-width: $small-screen) { @content; }
+  }
+  @if $point == greater-than-small-screen {
+    @media screen and (min-width: $small-screen + 1) { @content; }
+  }
+  @if $point == less-than-medium-screen {
+    @media screen and (max-width: $medium-screen - 1) { @content; }
+  }
+  @if $point == medium-screen {
+    @media screen and (min-width: $medium-screen) { @content; }
+  }
+  @if $point == greater-than-medium-screen {
+    @media screen and (min-width: $medium-screen + 1) { @content; }
+  }
+  @if $point == less-than-large-screen {
+    @media screen and (max-width: $large-screen - 1) { @content; }
+  }
+  @if $point == large-screen {
+    @media screen and (min-width: $large-screen) { @content; }
+  }
+  @if $point == greater-than-large-screen {
+    @media screen and (min-width: $medium-screen + 1) { @content; }
+  }
+  @if $point == less-than-xl-screen {
+    @media screen and (max-width: $xl-screen - 1) { @content; }
+  }
+  @if $point == hd-screen {
+    @media screen and (min-width: $hd-screen) { @content; }
+  }
+  @if $point == less-than-uhd-screen {
+    @media screen and (max-width: $uhd-screen) { @content; }
+  }
+  @if $point == uhd-screen {
+    @media screen and (min-width: $uhd-screen) { @content; }
+  }
+  @if $point == phone {
+    @media screen and (min-width: $tiny-screen) and (max-width: $medium-screen) {
+      @content;
+    }
+  }
+  @if $point == tablet {
+    @media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
+      @content;
+    }
+  }
+  @if $point == desktop {
+    @media screen and (min-width: $large-screen) and (max-width: $xl-screen) {
+      @content;
+    }
+  }
+  @if $point == large-desktop {
+    @media screen and (min-width: $xl-screen) and (max-width: $hd-screen) {
+      @content;
+    }
+  }
+  @if $point == hd-desktop {
+    @media screen and (min-width: $hd-screen) and (max-width: $uhd-screen) {
+      @content;
+    }
+  }
+}

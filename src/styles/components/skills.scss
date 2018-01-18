@@ -5,6 +5,17 @@ section.skills .content {
 .skill-category {
   flex-direction: column;
 
+  h2 {
+    border-bottom: 1px solid $color-two;
+    color: $color-one;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    margin-top: .5rem;
+  }
+
   & + .skill-category {
     h2 {
       margin-top: 2rem;

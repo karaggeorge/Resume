@@ -1,7 +1,17 @@
-section.projects .content {
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
+section.projects {
+  .content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem 4rem 4rem 4rem;
+  }
 }
 
 .project-card {
@@ -10,11 +20,37 @@ section.projects .content {
   width: 48%;
   flex-direction: column;
 
+  @include media-query(less-than-large-screen) {
+    width: 100%;
+  }
+
   h1 {
     color: $color-one;
+    margin-bottom: 1rem;
   }
 
   a {
+    color: $color-one;
+  }
+
+  .card-body {
+    flex: 1;
+    flex-direction: column;
+
+    p {
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  .btn-group {
+    align-self: flex-end;
+
+    .github-btn + .github-btn {
+      margin-left: 1rem;
+    }
+  }
+
+  .github-btn {
     background: $color-one;
     width: max-content;
     color: $white;

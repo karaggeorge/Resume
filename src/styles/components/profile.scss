@@ -1,8 +1,5 @@
-
-
-
 .heading {
-  height: 20rem;
+  height: 15rem;
   padding: 5rem;
   background-color: $color-one;
 }
@@ -11,9 +8,18 @@
   @include shadow;
   border: 2px red;
   background-color: $white;
-  width: 80%;
-  margin: -18rem auto 0 auto;
-  height: 32rem;
+  width: 50%;
+  margin: -15rem auto 0 auto;
+  height: 25rem;
+  border-radius: 1rem;
+
+  @include media-query(less-than-xl-screen) {
+    width: 70%;
+  }
+
+  @include media-query(less-than-large-screen) {
+    width: 80%;
+  }
 
 
   &-info {
@@ -24,6 +30,34 @@
   &__photo {
     flex: 4;
     background: url('/img/me.jpg') center top / cover no-repeat;
+  }
+
+  .info {
+    flex: 1;
+    flex-direction: column;
+    color: $color-one;
+    font-size: 1.25rem;
+    padding: .5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      list-style-type: none;
+      margin-bottom: .5rem;
+
+      i {
+        width: 2rem;
+        text-align: center;
+        padding-right: .5rem;
+      }
+    }
   }
 }
 
@@ -36,9 +70,22 @@
   border-radius: 4px;
   color: $white;
 
+  @include media-query(less-than-medium-screen) {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: max-content;
+    margin-top: .5rem;
+    margin-left: .5rem;
+  }
+
   a {
     @include hover-shadow;
-    padding: .75rem;
+    padding: 1rem;
+
+    @include media-query(less-than-large-screen) {
+      padding: .5rem;
+    }
   }
 
   &-download {
@@ -61,7 +108,6 @@
 
   h4 {
     border-bottom: 1px solid $color-two;
-    margin-bottom: 1rem;
     padding: .25rem 0 .5rem .5rem;
     font-weight: 300;
     font-size: 25px;
@@ -87,6 +133,8 @@
 .profile-card-info__social {
   flex: 1;
   background-color: $color-one;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 
   a {
     color: white;

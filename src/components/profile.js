@@ -20,23 +20,26 @@ class Profile extends Component {
 
   render() {
     return (
-      <section className='profile' id='profile'>
+      <section className='profile'>
+        <div className='anchor' id='profile' />
         <div className='heading' />
         <div className='profile-card'>
-          <div className='profile-card__photo' />
           <div className='profile-card-info'>
             <div className='profile-card-info__demographic'>
-              <div className='resume'>
-                <a className='resume-view' href='/files/GeorgeKaragkiaouris_Resume.pdf' target='_blank'> Resume </a>
-                <a className='resume-download' href='/files/GeorgeKaragkiaouris_Resume.pdf' download><Icon code='download' /></a>
-              </div>
               <h1> George Karagkiaouris </h1>
               <h4> Software Engineering & Biology </h4>
-              <div className='demographic'> <span className='title'> Age </span>{this.getAge()}</div>
-              <div className='demographic'> <span className='title'> Email </span><a href='mailto:gkaragkiaouris2@gmail.com'>gkaragkiaouris2@gmail.com</a></div>
-              <div className='demographic'> <span className='title'> Phone </span><a href='tel:+01-203-909-7497'>(203) 909-7497</a></div>
-              <div className='demographic'> <span className='title'> Address </span>275 Mt. Carmel Ave, Hamden, CT</div>
-              <div className='demographic'> <span className='title'> Nationality </span>Greek</div>
+                <div className='resume'>
+                  <a className='resume-view' href='/files/GeorgeKaragkiaouris_Resume.pdf' target='_blank'> Resume </a>
+                  <a className='resume-download' href='/files/GeorgeKaragkiaouris_Resume.pdf' download><Icon code='download' /></a>
+                </div>
+                <div className='info'>
+                  <ul>
+                    <li><Icon code='graduation-cap'/>Graduating May 2018</li>
+                    <li><a href='mailto:gkaragkiaouris2'><Icon code='envelope'/>gkaragkiaouris2@gmail.com</a></li>
+                    <li><a href='tel:+12039097497'><Icon code='phone'/>+1 203-909-7497</a></li>
+                    <li><a><Icon code='map-marker'/>275 Mt Carmel Ave, Hamden, CT</a></li>
+                  </ul>
+                </div>
             </div>
             <div className='profile-card-info__social'>
               <SocialIcon target='https://www.linkedin.com/in/gkaragkiaouris/' code='linkedin fa-2x' />
